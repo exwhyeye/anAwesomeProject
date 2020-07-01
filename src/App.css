@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+/*html::-webkit-scrollbar { width: 0; }*/
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +16,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /*background-color: #282c34;*/
+  background: linear-gradient(0deg, #23074d, #cc5333);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +29,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
