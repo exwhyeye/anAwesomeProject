@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
 
-import animationData from '../assets/i-stay-at-home.json';
+import animationData from '../../assets/i-stay-at-home.json';
 
 class IStayHome extends Component {
     render() {

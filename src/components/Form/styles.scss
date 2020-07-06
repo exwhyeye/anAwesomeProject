@@ -1,0 +1,111 @@
+.form_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 840px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.form_left {
+    height: 100%;
+    width: 555px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    line-height: 30px; 
+
+    input {
+        border: 1px solid #cdcdcd;
+        padding-left: 20px;
+        font-size: medium;
+        color: #cdcdcd;
+        font: normal medium/normal "Montserrat", Montserrat, sans-serif;
+        box-sizing: border-box;
+    }
+
+    input::placeholder {
+        color: #cdcdcd;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    textarea {
+        height: 200px; 
+        width: 100%;
+        padding-left: 20px; 
+        padding-top: 20px;
+        font-size: large;
+        color: #cdcdcd;
+        border: 1px solid #cdcdcd;
+        font: normal medium/normal "Montserrat", Montserrat, sans-serif;
+        box-sizing: border-box;  
+        resize: none;     
+    }
+
+    textarea::placeholder {
+        color: #cdcdcd;
+        font-size: small;
+        font-weight: bold;
+    }
+
+    p {
+        color: #cdcdcd;
+        font-size: medium;
+    }
+
+    a {
+        text-decoration: none;
+        float: left;
+    }
+
+    .input_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 440px;
+        width: 100%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        justify-content: space-between;
+        width: 175px;
+    }
+}
+
+.form_right {
+    height: 100%;
+    width: 555px;
+}
+
+.buttonSend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7beec7;
+    width: 165px;
+    height: 50px;
+    border: 0px;
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    color: white;
+    text-decoration: none;   
+    float: right;
+    font-weight: bold;
+    font-size: small;
+}
+
+.buttonSend:hover {
+    box-shadow: 0 0 5px #2d5e4e;
+    background-color: #7beec7;
+    transition: all 200ms cubic-bezier(0.42, 0, 0.55, 1);
+    color: #7beec7;
+}
+
+.buttonSend:active {
+    background-color: #6adfb8;
+    color: #6adfb8;
+}

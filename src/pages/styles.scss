@@ -1,0 +1,12 @@
+html::-webkit-scrollbar { width: 0; }
+
+.wrapper {
+    display: flex;
+    min-width: 1140px;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    color: #60606e;
+    font: normal medium/normal "Montserrat", Montserrat, sans-serif;
+}

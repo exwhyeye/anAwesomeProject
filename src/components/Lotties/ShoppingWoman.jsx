@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
 
-import animationData from '../assets/shopping-woman.json';
+import animationData from '../../assets/shopping-woman.json';
 
 class ShoppingWoman extends Component {
     render() {

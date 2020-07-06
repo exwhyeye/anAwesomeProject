@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
 
-import animationData from '../assets/coronavirus.json';
+import animationData from '../../assets/coronavirus.json';
 
 class Coronavirus extends Component {
     render() {

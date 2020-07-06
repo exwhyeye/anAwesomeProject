@@ -1,0 +1,26 @@
+.content_1_items {
+    height: 650px;
+    display: grid;
+    grid-template-columns: 341px 341px 458px;
+    grid-template-rows: 325px 325px;
+    
+    .item_1_4 {
+        display: flex;
+        padding-left: 20px;
+    }
+    
+    .item_5 {
+        display: flex;
+        justify-content: center;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+.content_box_1 {
+    height: 840px;
+    width: 1300px;
+    background-color: #ffffff;
+}

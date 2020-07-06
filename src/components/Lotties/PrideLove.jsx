@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Lottie from 'react-lottie';
 
-import animationData from '../assets/pride-love.json';
+import animationData from '../../assets/pride-love.json';
 
 class PrideLove extends Component {
     render() {

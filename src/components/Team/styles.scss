@@ -1,0 +1,25 @@
+.content_box_team {
+    height: 920px;
+    width: 100%;
+    text-align: center;
+    color: '#60606e';
+}
+
+.photos_container {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 262px 262px 262px 262px;
+    grid-template-rows: 336px 336px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    div {
+        background-color: #eeeeee;
+    }
+}
