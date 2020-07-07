@@ -19,7 +19,7 @@ class HomeHeader extends React.Component {
                                 <p>WE'RE</p>
                             </div>
                             <div className = "creative_agency">
-                                <p>CREATIVE AGENCY</p>
+                                {/*<p>CREATIVE AGENCY</p>*/}
                             </div>
                         </div>
                     </div>

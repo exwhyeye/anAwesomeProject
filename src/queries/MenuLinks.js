@@ -1,15 +1,17 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
+import { Link } from 'react-router-dom';
 
-const TeamQuery = () => (
+//import Menu from "../Menu";
+
+const MenuLinks = () => (
     <Query query = {gql`
         {              
-            teams{
-                image{
-                  alternativeText
-                  url
-                }
+            pages(sort:"id") {
+                id
+                menu_name
+                link
             }
         }
     `
@@ -18,12 +20,12 @@ const TeamQuery = () => (
         {({loading, error, data}) => {
             if (loading) return <p>Loading ... </p>;
             if (error) return <p>Error :(</p>;
-            return (data.teams.map(({index, image}) => (
-                <div><img key = {index} src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/></div>
+            return (data.pages.map(({index, menu_name, link}) => (
+                <Link key = {index} to={link}><p>{menu_name}</p></Link>
             )))
         }
 
     }</Query>
 );
 
-export default TeamQuery
+export default MenuLinks

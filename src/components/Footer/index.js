@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import './styles.scss';
 import '../container.scss';
 import Icons from '../../queries/Icons'
+import MenuLinks from '../../queries/MenuLinks'
 
 class Footer extends React.Component {         
     render() {
@@ -21,10 +21,7 @@ class Footer extends React.Component {
                     <div className = "container">
                         <div className = "sbf_all_content">
                             <div className = "sbf_content_left">                      
-                                <Link to='/' onChange = {window.scrollTo(0,0)}><p>HOME</p></Link>
-                                <Link to='/about'><p>ABOUT US</p></Link>
-                                <Link to='/portfolio'><p>PORTFOLIO</p></Link>
-                                <Link to='/contact'><p>CONTACT US</p></Link>
+                                <MenuLinks onChange = {window.scrollTo(0,0)}/>
                             </div>
                             <div className = "sbf_content_right">
                                 <p>CREATED BY JESUS 2016. ALL RIGHTS RESERVED</p>

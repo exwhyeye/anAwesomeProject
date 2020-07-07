@@ -14,12 +14,15 @@
 }
 
 .top_content {
-    height: 450px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     text-align: left;
-    margin-top: 125px;
     
+    h5 {
+        text-transform: uppercase;
+    }
 }
 
 .bottom_content {
@@ -28,10 +31,52 @@
 }
 
 .benefits_container {
-    margin-top: 50px;
+    height: 100px;
+    grid-gap: 20px 30px;
     text-align: left;
     display: grid;
-    grid-gap: 33.333px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-top: 80px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            float: left;
+            height: 40px;
+            
+            h5 {
+                text-transform: uppercase;
+                margin-left: 20px;
+                float: left;
+            }
+            
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: #6adfb8;
+            }
+        }
+    }
+
+    
+        
+        /*
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #6adfb8;
+        }
+        */
+    
 }
