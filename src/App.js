@@ -13,8 +13,6 @@ const client = new ApolloClient({
   uri: "http://84.201.139.254:1337/graphql"
 });
 
-
-
 function App() {
   return (
     <ApolloProvider client={client}>

@@ -5,7 +5,7 @@ import '../container.scss';
 
 import Menu from "../Menu";
 
-class AboutHeader extends React.Component {
+class SecondHeader extends React.Component {
     render() {
         return (
             <div style={{width: '100%'}}>
@@ -15,7 +15,7 @@ class AboutHeader extends React.Component {
                     </div>                       
                     <div className = "aheader">                                                                       
                         <div className = "about">
-                            <p>ABOUT US</p>
+                            <p>{this.props.data}</p>
                         </div>
                     </div>
                 </div>
@@ -24,4 +24,4 @@ class AboutHeader extends React.Component {
     }
 }
 
-export default AboutHeader;
+export default SecondHeader;

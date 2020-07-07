@@ -1,6 +1,0 @@
-query {
-    sections(where:{name:"about_page_team"}){
-        header
-        subheader
-    }
-}

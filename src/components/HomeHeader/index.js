@@ -5,6 +5,7 @@ import '../container.scss';
 
 import Menu from "../Menu";
 
+
 class HomeHeader extends React.Component {
     render() {
         return (
@@ -16,10 +17,10 @@ class HomeHeader extends React.Component {
                     <div className = "header">                                                                       
                         <div className = "naming">
                             <div className = "we_are">
-                                <p>WE'RE</p>
+                                {this.props.data.split('\\n')[0]}
                             </div>
                             <div className = "creative_agency">
-                                {/*<p>CREATIVE AGENCY</p>*/}
+                                {this.props.data.split('\\n')[1]}
                             </div>
                         </div>
                     </div>

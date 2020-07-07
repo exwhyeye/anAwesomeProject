@@ -1,12 +1,13 @@
 .content_1_items {
-    height: 650px;
+    height: 500px;
     display: grid;
-    grid-template-columns: 341px 341px 458px;
-    grid-template-rows: 325px 325px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px 10px;
     
-    .item_1_4 {
-        display: flex;
-        padding-left: 20px;
+    .img_div {
+        height: 28px;
+        width: 28px;
     }
     
     .item_5 {

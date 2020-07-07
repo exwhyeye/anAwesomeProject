@@ -2,7 +2,7 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
-const Icons = () => (
+const SocialNetworks = () => (
     <Query query = {gql`
         {              
             socialNetworks{
@@ -27,4 +27,4 @@ const Icons = () => (
     }</Query>
 );
 
-export default Icons
+export default SocialNetworks

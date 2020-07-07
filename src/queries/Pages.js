@@ -3,8 +3,6 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
 
-//import Menu from "../Menu";
-
 const Pages = () => (
     <Query query = {gql`
         {              
