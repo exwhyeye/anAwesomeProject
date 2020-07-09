@@ -12,7 +12,7 @@ class Team extends React.Component {
                     <p>{this.props.data.getPage.sections[1].subheader}</p>
                     <div className = "photos_container">
                         {(this.props.data.teams.map(({index, image}) => (
-                            <div><img key = {index} src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/></div>
+                            <div key = {index}><img src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/></div>
                         )))}
                     </div>
                 </div>

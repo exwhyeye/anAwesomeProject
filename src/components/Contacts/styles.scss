@@ -1,0 +1,43 @@
+.form_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 840px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .form_left {
+        height: 100%;
+        width: 555px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+        line-height: 30px; 
+    
+        p {
+            color: #cdcdcd;
+            font-size: medium;
+        }
+    
+        a {
+            text-decoration: none;
+            float: left;
+        }
+    
+        .icons {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            justify-content: space-between;
+            width: 175px;
+        }
+    }
+}
+
+
+
+.form_right {
+    height: 100%;
+    width: 555px;
+}

@@ -3,8 +3,6 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
 
-//import Menu from "../Menu";
-
 const MenuLinks = () => (
     <Query query = {gql`
         {              
@@ -23,9 +21,9 @@ const MenuLinks = () => (
             return (data.pages.map(({index, menu_name, link}) => (
                 <Link key = {index} to={link}><p>{menu_name}</p></Link>
             )))
+            }
         }
-
-    }</Query>
+    </Query>
 );
 
 export default MenuLinks

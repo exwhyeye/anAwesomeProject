@@ -48,7 +48,7 @@ class About extends React.Component {
         }>
                 {({loading, error, data}) => {
                     if (loading) return <div className = "message"><Loading/></div>;
-                    if (error) return <div className = "message"><Error/><p>ERROR :(</p></div>;
+                    if (error) return <div className = "message"><Error/><p>AN ERROR OCCURED :(</p></div>;
 
                     return (
                         <div className = "wrapper">

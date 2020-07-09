@@ -1,11 +1,24 @@
 import React from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 import './styles.scss';
 import '../container.scss';
+import Test from '../Test/Test';
 
 class Portfolio extends React.Component {
-    render() {
-        console.log(this.props.data)
+    constructor(props) {
+        super(props);
+        this.state = {
+            sortCategory: 'ALL'
+        };
+      }
+
+    handleClick(item) {
+        this.setState({ sortCategory: item });
+    }
+
+    render() {     
         return (
             <div className = "content_box_2"> 
                 <div className = "container"> 
@@ -19,15 +32,12 @@ class Portfolio extends React.Component {
                     <div className = "content_2_items">
                         <div className = "item_1">
                             <h1>ВЫБРАТЬ КАТЕГОРИЮ</h1>
-                            {(this.props.data.categoryPortfolios.map(({index, name}) => (                         
-                                <p style = {{textTransform: 'uppercase'}} key = {index}>{name}</p>
+                            <p><a style = {{cursor: 'pointer'}} onClick = {() => this.handleClick('ALL')}>ВСЕ</a></p>
+                            {(this.props.data.categoryPortfolios.map(({index, name, id}) => (                         
+                                <p style = {{textTransform: 'uppercase'}} key = {index}><a style = {{cursor: 'pointer'}} onClick = {() => this.handleClick(id)}>{name}</a></p>
                             )))}    
-                        </div>                                            
-                            {(this.props.data.projects.map(({index, image}) => (                         
-                                <div className = "item_2_10">
-                                    <img key = {index} src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/>
-                                </div>
-                            )))}       
+                        </div>                                      
+                        <Test {...this.state}/>
                     </div>
                 </div>
             </div>

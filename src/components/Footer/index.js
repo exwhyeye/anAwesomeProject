@@ -4,8 +4,8 @@ import gql from 'graphql-tag';
 
 import './styles.scss';
 import '../container.scss';
-import SocialNetworks from '../SocialNetworks/index'
-import MenuLinks from '../../queries/MenuLinks'
+import SocialNetworks from '../SocialNetworks/index';
+import MenuLinks from '../../queries/MenuLinks';
 
 class Footer extends React.Component {         
     render() {
@@ -44,7 +44,7 @@ class Footer extends React.Component {
                                         <p>CREATED BY JESUS 2016. ALL RIGHTS RESERVED</p>
                                         <div className = "icons"><SocialNetworks/></div>
                                     </div>
-                                </div>
+                                </div>                          
                             </div>
                         </div>
                     </div>

@@ -10,6 +10,7 @@ import Loading from "../../components/Lotties/loading";
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
+import Test from "../../components/Test/Test";
 
 class Homepage extends React.Component {
     render() {
@@ -52,10 +53,10 @@ class Homepage extends React.Component {
                             }
                           }
                           categoryPortfolios{
-                            name
-                            
+                            id
+                            name                        
                           }
-                          projects (limit:12){
+                          projects (limit:9){
                             header
                             subheader
                             description
@@ -72,7 +73,7 @@ class Homepage extends React.Component {
             
             {({loading, error, data}) => {
                 if (loading) return <div className = "message"><Loading/></div>;
-                if (error) return <div className = "message"><Error/><p>ERROR :(</p></div>;
+                if (error) return <div className = "message"><Error/><p>AN ERROR OCCURED :(</p></div>;
 
                 return (
                     <div className = "wrapper">

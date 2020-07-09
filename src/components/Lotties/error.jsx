@@ -19,6 +19,7 @@ class Error extends Component {
                 <Lottie options = {defaultOptions}
                     height = {400}
                     widht = {400}
+                    isClickToPauseDisabled={true}
                 />
             </div>
         )

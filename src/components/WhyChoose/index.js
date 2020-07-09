@@ -21,7 +21,7 @@ class WhyChoose extends React.Component {
                             </div>
                         )))}
                         <div className = "item_5">
-                            <img src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`} />
+                            <img src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`} alt = {this.props.data.getPage.sections[2].image_for_section.image.alternativeText}/>
                         </div>
                     </div>
                 </div>
