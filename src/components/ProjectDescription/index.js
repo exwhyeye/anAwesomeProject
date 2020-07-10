@@ -52,7 +52,7 @@ class ProjectDescription extends React.Component {
                                     <div className = 'categories'>
                                         <ul>
                                         {(data.projects[0].category_portfolios.map(({index, name}) => (                         
-                                            <li key = {index}>{name}</li>
+                                            <li key = {index}>{name} </li>
                                         )))}
                                         </ul>
                                         <Link to='/portfolio'><Back/></Link>                                    

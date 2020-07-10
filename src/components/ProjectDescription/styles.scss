@@ -24,19 +24,20 @@
         
         .description-categories {
             display: grid;
-            grid-template-columns: 4fr 1fr;
+            grid-template-columns: 4fr 1.2fr;
             grid-template-rows: 1fr;
 
             .description {
                 color: #8f8f8f;
                 font-size: medium;
                 line-height: 30px;
-                max-height: 300px;
+                min-height: 300px;
             }
 
             .categories {
                 display: flex;
                 flex-direction: column;
+                text-align: justify;
 
                 li {
                     list-style-image: url(../../assets/marker.png)
