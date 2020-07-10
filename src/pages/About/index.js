@@ -38,7 +38,7 @@ class About extends React.Component {
                         description
                 }
                 
-                teams{
+                teams(sort:"order"){
                     Name
                     image{
                     url
