@@ -6,7 +6,7 @@ import '../container.scss';
 class Team extends React.Component {
     render() {
         return (
-            <div className = "content-box-team" data-aos = 'fade-up'> 
+            <div className = "content-box-team" data-aos = 'fade-up' data-aos-once="true"> 
                 <div className = "container"> 
                     <h1>{this.props.data.getPage.sections[1].header}</h1>
                     <p>{this.props.data.getPage.sections[1].subheader}</p>

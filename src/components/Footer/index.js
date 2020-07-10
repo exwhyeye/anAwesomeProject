@@ -25,7 +25,7 @@ class Footer extends React.Component {
                 if (loading) return <p>Loading...</p>;
                 if (error) return <p>Error :(</p>;   
                 return (     
-                    <div className = "footer" data-aos = 'fade-up'>
+                    <div className = "footer" data-aos = 'fade-up' data-aos-once="true">
                         <div className = "subfooter-1">
                             <div className = "container">
                                 <div className = "sbf-all-content">                                                                                   

@@ -30,7 +30,7 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className = "content-box-2" data-aos = 'fade-up'> 
+            <div className = "content-box-2" data-aos = 'fade-up' data-aos-once="true"> 
                 <div className = "container"> 
                     {typeof this.props.data.getPage.sections[4] != 'undefined' ? 
                         <div className = "title">
@@ -40,7 +40,7 @@ class Portfolio extends React.Component {
                         :
                         <div style = {{marginTop: "100px"}}></div>}
                     <div className = "content-2-items">
-                        <div className = "item-1" data-aos = 'fade-left'>
+                        <div className = "item-1" data-aos = 'fade-left' data-aos-once="true">
                             <h1>ВЫБРАТЬ КАТЕГОРИЮ</h1>
                             <a onClick = {() => this.handleClick('ALL')}>все</a>
                             {(this.props.data.categoryPortfolios.map(({index, name, id}) => (                                                                        

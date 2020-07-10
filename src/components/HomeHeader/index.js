@@ -7,7 +7,7 @@ import Menu from "../Menu";
 class HomeHeader extends React.Component {
     render() {
         return (    
-            <div style={{width: '100%'}} className = 'whole-header' data-aos = 'fade-up'>
+            <div style={{width: '100%'}} className = 'whole-header' data-aos = 'fade-up' data-aos-once="true">
                 <div className = "back">
                     <video 
                         loop="loop" 

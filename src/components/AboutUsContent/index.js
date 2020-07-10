@@ -8,7 +8,7 @@ class AboutUsContent extends React.Component {
         return (
             <div className = "content-box-about">
                 <div className = "container"> 
-                    <div className = "top-content" data-aos = 'fade-up'>
+                    <div className = "top-content" data-aos = 'fade-up' data-aos-once="true">
                         {(this.props.data.aboutuses.map(({index, header, subheader, description}) => (
                             <div key = {index}>
                                 <h1>{header}</h1>
@@ -17,7 +17,7 @@ class AboutUsContent extends React.Component {
                             </div>
                         ))) } 
                     </div>
-                    <div className = "bottom-content" data-aos = 'fade-up'>
+                    <div className = "bottom-content" data-aos = 'fade-up' data-aos-once="true">
                         <h1 style = {{textTransform: 'uppercase'}}>{this.props.data.getPage.sections[2].header}</h1>
                         <p style = {{color: '#60606e'}}>
                             {this.props.data.getPage.sections[2].subheader}

@@ -34,13 +34,13 @@ class ProjectDescription extends React.Component {
                 return (
                     <div className = "container">
                         <div className = 'description-container'>
-                            <div className = 'image-box' data-aos = 'fade-up'>
+                            <div className = 'image-box' data-aos = 'fade-up' data-aos-once="true">
                                 <img 
                                     src = {`http://84.201.139.254:1337${data.projects[0].image.url}`} 
                                     alt = {data.projects[0].image.alternativeText}
                                 />
                             </div>
-                            <div className = 'description-box' data-aos = 'fade-up'>
+                            <div className = 'description-box' data-aos = 'fade-up' data-aos-once="true">
                                 <div className = 'head'>
                                     <h1 style = {{textTransform: 'uppercase'}}>{data.projects[0].header}</h1>
                                     <p>{data.projects[0].subheader}</p>
