@@ -1,19 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 
 import './styles.scss';
 import '../container.scss';
 import SocialNetworks from '../SocialNetworks/index';
 import MenuLinks from '../../queries/MenuLinks';
 
-class Footer extends React.Component {   
-    componentDidMount() {
-        //AOS.init({duration: 1000})
-    }
-
+class Footer extends React.Component {  
     render() {      
         return (
             <Query

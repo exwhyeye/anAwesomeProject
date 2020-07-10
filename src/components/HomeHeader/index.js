@@ -10,8 +10,9 @@ class HomeHeader extends React.Component {
             <div style={{width: '100%'}} className = 'whole-header' data-aos = 'fade-up'>
                 <div className = "back">
                     <video 
-                        loop="true" 
-                        autoplay=""
+                        loop="loop" 
+                        autoplay="autoplay"
+                        muted="muted"
                         className = "video" 
                         src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[0].image_for_section.image.url}`}
                     />                    

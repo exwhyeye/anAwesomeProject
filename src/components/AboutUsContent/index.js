@@ -1,15 +1,9 @@
 import React from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 
 import './styles.scss';
 import '../container.scss';
 
 class AboutUsContent extends React.Component {
-    componentDidMount() {
-        AOS.init({duration: 1000})
-    }
     render() {
         return (
             <div className = "content-box-about">
