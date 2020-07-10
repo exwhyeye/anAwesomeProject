@@ -15,56 +15,56 @@ class PortfolioPage extends React.Component {
             <Query
                 query = {gql`
                     {
-                        getPage(name:"portfolio_page"){
-                            title
-                            name
-                            link
-                            sections{
-                              name
-                              header
-                              subheader
-                              name
-                              image_for_section{
-                                image{
-                                  url
-                                  alternativeText
-                                }
-                              }
-                              benefits{
-                                header
-                                description
-                                icon{
-                                  url
-                                  alternativeText
-                                }
-                              }
-                            }
-                          }
-                          history(id:1){
-                            header
-                            passage
-                            text
+                      getPage(name:"portfolio_page"){
+                        title
+                        name
+                        link
+                        sections{
+                          name
+                          header
+                          subheader
+                          name
+                          image_for_section{
                             image{
                               url
                               alternativeText
                             }
                           }
-                          categoryPortfolios{
-                            name
-                            
-                          }
-                          projects{
+                          benefits{
                             header
-                            subheader
                             description
-                            category_portfolios{
-                              name
-                            }
-                            image{
+                            icon{
                               url
                               alternativeText
                             }
                           }
+                        }
+                      }
+                      history(id:1){
+                        header
+                        passage
+                        text
+                        image{
+                          url
+                          alternativeText
+                        }
+                      }
+                      categoryPortfolios{
+                        id
+                        name                        
+                      }
+                      projects{
+                        header
+                        subheader
+                        description
+                        category_portfolios{
+                          name
+                        }
+                        image{
+                          url
+                          alternativeText
+                        }
+                      }
                     }`
                 }
             >
@@ -75,7 +75,7 @@ class PortfolioPage extends React.Component {
                     return (
                         <div className = "wrapper">
                             <SecondHeader data={data.getPage.sections[0].header}/>
-                            <Portfolio data = {data}/>
+                            <div style = {{display: 'table'}}><Portfolio data = {data}/></div>
                             <Footer/>
                         </div>
                     );

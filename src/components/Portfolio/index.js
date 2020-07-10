@@ -1,26 +1,37 @@
 import React from 'react';
-import { Query } from 'react-apollo';
-import gql from 'graphql-tag';
+
 
 import './styles.scss';
 import '../container.scss';
-import Test from '../Test/Test';
+import Projects from '../Projects/index';
 
 class Portfolio extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            sortCategory: 'ALL'
+            sortCategory: 'ALL',
+            projectNumbers: 9
         };
       }
+    
+    projectNumbers = this.props.data.projects.length;
 
+    componentWillMount() {    
+        if (typeof this.props.data.getPage.sections[4] != 'undefined') {
+            this.state.projectNumbers = 9  
+        }                      
+        else {                                        
+            this.state.projectNumbers = this.projectNumbers 
+        }                      
+    }
+    
     handleClick(item) {
         this.setState({ sortCategory: item });
     }
 
-    render() {     
+    render() {
         return (
-            <div className = "content_box_2"> 
+            <div className = "content-box-2"> 
                 <div className = "container"> 
                     {typeof this.props.data.getPage.sections[4] != 'undefined' ? 
                         <div className = "title">
@@ -29,15 +40,15 @@ class Portfolio extends React.Component {
                         </div> 
                         :
                         <div style = {{marginTop: "100px"}}></div>}
-                    <div className = "content_2_items">
-                        <div className = "item_1">
+                    <div className = "content-2-items">
+                        <div className = "item-1">
                             <h1>ВЫБРАТЬ КАТЕГОРИЮ</h1>
-                            <p><a style = {{cursor: 'pointer'}} onClick = {() => this.handleClick('ALL')}>ВСЕ</a></p>
-                            {(this.props.data.categoryPortfolios.map(({index, name, id}) => (                         
-                                <p style = {{textTransform: 'uppercase'}} key = {index}><a style = {{cursor: 'pointer'}} onClick = {() => this.handleClick(id)}>{name}</a></p>
-                            )))}    
-                        </div>                                      
-                        <Test {...this.state}/>
+                            <a onClick = {() => this.handleClick('ALL')}>все</a>
+                            {(this.props.data.categoryPortfolios.map(({index, name, id}) => (                                                                        
+                                <a onClick = {() => this.handleClick(id)}>{name}</a>
+                            )))}                         
+                        </div>                                                                                  
+                        <Projects {...this.state}/>                                  
                     </div>
                 </div>
             </div>

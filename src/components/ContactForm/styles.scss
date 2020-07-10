@@ -1,4 +1,4 @@
-.input_area {
+.input-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,10 +7,10 @@
 }
 
 input {
-    border: 1px solid #cdcdcd;
+    border: 1px solid #8f8f8f;
     padding-left: 20px;
     font-size: medium;
-    color: #cdcdcd;
+    color: #8f8f8f;
     font: normal medium/normal "Montserrat", Montserrat, sans-serif;
     box-sizing: border-box;
 }
@@ -27,14 +27,14 @@ textarea {
     padding-left: 20px; 
     padding-top: 20px;
     font-size: large;
-    color: #cdcdcd;
-    border: 1px solid #cdcdcd;
+    color: #8f8f8f;
+    border: 1px solid #8f8f8f;
     font: normal medium/normal "Montserrat", Montserrat, sans-serif;
     box-sizing: border-box;  
     resize: none;     
 }
 
-.first_two {
+.first-two {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +46,7 @@ textarea::placeholder {
     font-weight: bold;
 
     p {
-        color: #cdcdcd;
+        color: #8f8f8f;
         font-size: medium;
     }
 
@@ -68,6 +68,7 @@ textarea::placeholder {
     color: white;
     text-decoration: none;   
     float: left;
+    cursor: pointer;
     /*font-weight: bold;
     font-size: small;*/
     font: bold small "Montserrat", Montserrat, sans-serif;

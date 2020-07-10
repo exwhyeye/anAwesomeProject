@@ -6,9 +6,9 @@ import '../container.scss';
 class AboutUsContent extends React.Component {
     render() {
         return (
-            <div className = "content_box_about">
+            <div className = "content-box-about">
                 <div className = "container"> 
-                    <div className = "top_content">
+                    <div className = "top-content">
                         {(this.props.data.aboutuses.map(({index, header, subheader, description}) => (
                             <div key = {index}>
                                 <h1>{header}</h1>
@@ -17,13 +17,13 @@ class AboutUsContent extends React.Component {
                             </div>
                         ))) } 
                     </div>
-                    <div className = "bottom_content">
+                    <div className = "bottom-content">
                         <h1 style = {{textTransform: 'uppercase'}}>{this.props.data.getPage.sections[2].header}</h1>
                         <p style = {{color: '#60606e'}}>
                             {this.props.data.getPage.sections[2].subheader}
                         </p>
                         <div className  = "container">
-                            <div className = "benefits_container">
+                            <div className = "benefits-container">
                                 {(this.props.data.getPage.sections[2].benefits.map(({index, header, description, icon}) => (
                                     <div key = {index}>
                                         <div>

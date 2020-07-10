@@ -1,4 +1,4 @@
-.content_box_about {
+.content-box-about {
     height: 1260px;
     width: 100%;
     display: flex;
@@ -7,13 +7,13 @@
     justify-content: center;
     
     p {
-        color: #cdcdcd;
+        color: #8f8f8f;
         line-height: 30px;
         font-size: medium;
     }
 }
 
-.top_content {
+.top-content {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
@@ -25,12 +25,12 @@
     }
 }
 
-.bottom_content {
+.bottom-content {
     height: 660px;
     text-align: center;
 }
 
-.benefits_container {
+.benefits-container {
     height: 100px;
     grid-gap: 20px 30px;
     text-align: left;

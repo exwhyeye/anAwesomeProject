@@ -26,21 +26,21 @@ class Footer extends React.Component {
                 if (error) return <p>Error :(</p>;   
                 return (     
                     <div className = "footer">
-                        <div className = "subfooter_1">
+                        <div className = "subfooter-1">
                             <div className = "container">
-                                <div className = "sbf_all_content">                                                                                   
+                                <div className = "sbf-all-content">                                                                                   
                                     <h1 key = {data.index}>{data.offer.offer}</h1>
                                     <a href = {`${data.offer.link}`} className = "button">{data.offer.text_button}</a>
                                 </div>
                             </div>                  
                         </div>
-                        <div className = "subfooter_2">
+                        <div className = "subfooter-2">
                             <div className = "container">
-                                <div className = "sbf_all_content">
-                                    <div className = "sbf_content_left">                      
+                                <div className = "sbf-all-content">
+                                    <div className = "sbf-content-left">                      
                                         <MenuLinks onChange = {window.scrollTo(0,0)}/>
                                     </div>
-                                    <div className = "sbf_content_right">
+                                    <div className = "sbf-content-right">
                                         <p>CREATED BY JESUS 2016. ALL RIGHTS RESERVED</p>
                                         <div className = "icons"><SocialNetworks/></div>
                                     </div>

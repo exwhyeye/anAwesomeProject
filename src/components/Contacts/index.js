@@ -10,19 +10,19 @@ class Contacts extends React.Component {
     render() {
         return(
             <div className = 'container'>
-                <div className = "form_box">
-                    <div className = "form_left">      
+                <div className = "form-box">
+                    <div className = "form-left">      
                         <ContactForm/>                      
                         <div className = 'contact'>
                             <h3 style = {{textTransform: 'uppercase'}}>{this.props.data.getPage.title}</h3>
                             <p>{this.props.data.getPage.sections[1].subheader}</p>
                             <p>{this.props.data.contacts[0].contact}<br></br>{this.props.data.contacts[1].contact}<br></br>{this.props.data.contacts[2].contact}</p>
-                            <a style = {{color: '#cdcdcd'}} href = {`mailto:${this.props.data.contacts[3].contact}`}>{this.props.data.contacts[3].contact}</a>
+                            <a style = {{color: '#8f8f8f'}} href = {`mailto:${this.props.data.contacts[3].contact}`}>{this.props.data.contacts[3].contact}</a>
                             
                         </div>
                         <div className = "icons"><SocialNetworks/></div>
                     </div>
-                    <div className = "form_right">
+                    <div className = "form-right">
                         <div>
                             <iframe 
                                 title="yandexMap"                            

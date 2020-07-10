@@ -1,18 +1,16 @@
-.content_1_items {
+.content-1-items {
     height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0px 10px;
     
-    .img_div {
+    .img-div {
         height: 28px;
         width: 28px;
     }
     
-    .item_5 {
-        display: flex;
-        justify-content: center;
+    .item-5 {
         grid-column-start: 3;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -20,7 +18,7 @@
     }
 }
 
-.content_box_1 {
+.content-box-1 {
     height: 840px;
     width: 1300px;
     background-color: #ffffff;

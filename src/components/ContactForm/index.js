@@ -19,7 +19,7 @@ import './styles.scss'
     }
   
     return (
-        <div className="signup_body">
+        <div className="signup-body">
             <Formik
                 initialValues={{
                     name: '',
@@ -40,8 +40,8 @@ import './styles.scss'
         
                 render={() => {                   
                 return (
-                    <Form className = "input_area" id = "contact-form">
-                        <div className = "first_two">
+                    <Form className = "input-area" id = "contact-form">
+                        <div className = "first-two">
                         <div>
                             <Field 
                                 name="name" 

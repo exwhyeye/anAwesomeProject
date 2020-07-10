@@ -1,48 +1,40 @@
-.content-box-team {
-    height: 920px;
-    width: 100%;
-    text-align: center;
-    color: '#60606e';
-}
-
-.photos-container {
-    margin-top: 50px;
+.content-grid {
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 262px 262px 262px 262px;
-    grid-template-rows: 336px 336px;
+    grid-gap: 33.333px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     
     img {
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
-        opacity: 1;
+        opacity: 1; 
         transition: .5s ease;
         backface-visibility: hidden;
+    }    
+
+    .picture  {
+        position: relative;
     }
 
-    .photo  {
-        position: relative;
-        width: 100%;
-    }
-    
-    .photo:hover img {
+    .picture:hover img {
         opacity: 0.3;
       }
       
-    .photo:hover .middle {
+    .picture:hover .center {
         opacity: 1;
     }
 
-    .name {
+    .readmore {
         background-color: #6adfb8;
         color: white;
         font-size: medium;
         padding: 12px 28px;
+        box-shadow: 0 0 2px #245e4b;
     }
 
-    .middle {
+    .center {
         transition: .5s ease;
         opacity: 0;
         position: absolute;

@@ -12,14 +12,14 @@ class HomeHeader extends React.Component {
             <div style={{width: '100%'}}>
                 <div className = "back"> 
                     <div className = "container">
-                        <div className = 'menu_container'><Menu/></div> 
+                        <div className = 'menu-container'><Menu/></div> 
                     </div>                       
                     <div className = "header">                                                                       
                         <div className = "naming">
-                            <div className = "we_are">
+                            <div className = "we-are">
                                 {this.props.data.split('\\n')[0]}
                             </div>
-                            <div className = "creative_agency">
+                            <div className = "creative-agency">
                                 {this.props.data.split('\\n')[1]}
                             </div>
                         </div>
@@ -29,7 +29,7 @@ class HomeHeader extends React.Component {
 
                 <div className = "subheader" >
                     <div className = "container"> 
-                        <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" className = "button">READ MORE</a>
+                        <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" className = "button">ПОДРОБНЕЕ</a>
                     </div>
                 </div>
             </div>

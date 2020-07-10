@@ -3,6 +3,8 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
 
+import './styles.scss'
+
 const MenuLinks = () => (
     <Query query = {gql`
         {              
@@ -19,7 +21,7 @@ const MenuLinks = () => (
             if (loading) return <p>Loading ... </p>;
             if (error) return <p>Error :(</p>;
             return (data.pages.map(({index, menu_name, link}) => (
-                <Link key = {index} to={link}><p>{menu_name}</p></Link>
+                <Link key = {index} to={link}><p className = 'line'>{menu_name}</p></Link>
             )))
             }
         }

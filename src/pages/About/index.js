@@ -39,6 +39,7 @@ class About extends React.Component {
                 }
                 
                 teams{
+                    Name
                     image{
                     url
                     alternativeText

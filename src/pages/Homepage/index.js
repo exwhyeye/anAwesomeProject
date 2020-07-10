@@ -10,8 +10,6 @@ import Loading from "../../components/Lotties/loading";
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
-import Test from "../../components/Test/Test";
-
 class Homepage extends React.Component {
     render() {
         return (
@@ -56,7 +54,7 @@ class Homepage extends React.Component {
                             id
                             name                        
                           }
-                          projects (limit:9){
+                          projects{
                             header
                             subheader
                             description

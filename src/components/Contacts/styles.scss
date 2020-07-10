@@ -1,4 +1,4 @@
-.form_box {
+.form-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,7 +7,7 @@
     margin-top: 150px;
     margin-bottom: 150px;
 
-    .form_left {
+    .form-left {
         height: 100%;
         width: 555px;
         display: flex;
@@ -16,7 +16,7 @@
         line-height: 30px; 
     
         p {
-            color: #cdcdcd;
+            color: #8f8f8f;
             font-size: medium;
         }
     
@@ -37,7 +37,7 @@
 
 
 
-.form_right {
+.form-right {
     height: 100%;
     width: 555px;
 }

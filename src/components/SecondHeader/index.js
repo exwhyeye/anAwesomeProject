@@ -11,11 +11,11 @@ class SecondHeader extends React.Component {
             <div style={{width: '100%'}}>
                 <div className = "aback"> 
                     <div className = "container">
-                        <div className = 'amenu_container'><Menu/></div> 
+                        <div className = 'amenu-container'><Menu/></div> 
                     </div>                       
                     <div className = "aheader">                                                                       
                         <div className = "about">
-                            <p>{this.props.data}</p>
+                            <p style = {{textTransform: 'uppercase'}}>{this.props.data}</p>
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import Homepage from './pages/Homepage/index';
 import About from './pages/About/index';
 import Contact from './pages/Contact/index';
 import Portfolio from './pages/Portfolio/index';
+import Project from './pages/Project/index';
 
 const client = new ApolloClient({
   uri: "http://84.201.139.254:1337/graphql"
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" exact component={About}/>
         <Route path="/contact" exact component={Contact}/>
         <Route path="/portfolio" exact component={Portfolio}/>
+        <Route path="/project/:name" exact component={Project}/>
       </Router>
     </ApolloProvider>
   );
