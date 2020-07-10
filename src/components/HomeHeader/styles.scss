@@ -1,8 +1,17 @@
 .back {
     height: 850px;
     width: 100%;
-    background: url(http://84.201.139.254:1337/uploads/site_hero_e68bd5659d.jpeg) no-repeat center top;
-    background-size: cover;
+    //background: url(http://84.201.139.254:1337/uploads/site_hero_e68bd5659d.jpeg) no-repeat center top;
+    //background-size: cover;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 850px;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;  
 }
 
 .header {
@@ -67,7 +76,7 @@
         justify-content: center;
         width: 98px;
         height: 30px;
-        margin-top: -250px;
+        margin-top: -200px;
         background-color: #7beec7;
         color: #60606e;
         font-weight: bold;
@@ -87,9 +96,7 @@
     }
 }
 
-
 .title {
     height: 190px;
     text-align: center;
 }
-

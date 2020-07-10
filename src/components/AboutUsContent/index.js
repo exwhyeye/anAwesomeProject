@@ -1,14 +1,20 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 import './styles.scss';
 import '../container.scss';
 
 class AboutUsContent extends React.Component {
+    componentDidMount() {
+        AOS.init({duration: 1000})
+    }
     render() {
         return (
             <div className = "content-box-about">
                 <div className = "container"> 
-                    <div className = "top-content">
+                    <div className = "top-content" data-aos = 'fade-up'>
                         {(this.props.data.aboutuses.map(({index, header, subheader, description}) => (
                             <div key = {index}>
                                 <h1>{header}</h1>
@@ -17,7 +23,7 @@ class AboutUsContent extends React.Component {
                             </div>
                         ))) } 
                     </div>
-                    <div className = "bottom-content">
+                    <div className = "bottom-content" data-aos = 'fade-up'>
                         <h1 style = {{textTransform: 'uppercase'}}>{this.props.data.getPage.sections[2].header}</h1>
                         <p style = {{color: '#60606e'}}>
                             {this.props.data.getPage.sections[2].subheader}

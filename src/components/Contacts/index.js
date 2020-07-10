@@ -10,7 +10,7 @@ class Contacts extends React.Component {
     render() {
         return(
             <div className = 'container'>
-                <div className = "form-box">
+                <div className = "form-box" data-aos = 'fade-up'>
                     <div className = "form-left">      
                         <ContactForm/>                      
                         <div className = 'contact'>
@@ -22,8 +22,8 @@ class Contacts extends React.Component {
                         </div>
                         <div className = "icons"><SocialNetworks/></div>
                     </div>
-                    <div className = "form-right">
-                        <div>
+                    <div className = "form-right" data-aos = 'fade-up'>
+                        <div style = {{backgroundColor: '#f5f5f5'}}>
                             <iframe 
                                 title="yandexMap"                            
                                 width="100%" 

@@ -34,15 +34,14 @@ class Projects extends React.Component {
                 return (
                     <div className = "content-grid">  
                         {                           
-                            (data.projects.map(({index, image, header}) => (                    
-                                <div key = {index} className = 'picture'>                                                          
-                                    <img src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/>
+                            (data.projects.map(({index, image, header}) => (               
+                                <div key = {index} className = 'picture' data-aos = 'fade-left'>                                                          
+                                    <img src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/>                              
                                     <div className = 'center'>
                                         <Link style = {{textDecoration: 'none'}} to={`/project/${header}`}><div className = 'readmore'>ПОДРОБНЕЕ</div></Link>
                                     </div>    
-                                                          
-                                </div>
-                            )))                           
+                                </div>              
+                            )))
                         } 
                     </div>                 
                 );

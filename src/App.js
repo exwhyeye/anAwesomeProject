@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 import './App.css';
 import Homepage from './pages/Homepage/index';
@@ -15,6 +17,9 @@ const client = new ApolloClient({
 });
 
 function App() {
+ 
+  AOS.init({duration: 1000})
+  
   return (
     <ApolloProvider client={client}>
       <Router>

@@ -75,7 +75,7 @@ class Homepage extends React.Component {
 
                 return (
                     <div className = "wrapper">
-                        <HomeHeader data = {data.getPage.sections[0].header}/>
+                        <HomeHeader data = {data}/>
                         <WhyChoose data = {data}/>
                         <Portfolio data = {data}/>
                         <Footer/>

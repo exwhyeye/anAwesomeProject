@@ -8,7 +8,7 @@ import Menu from "../Menu";
 class SecondHeader extends React.Component {
     render() {
         return (
-            <div style={{width: '100%'}}>
+            <div style={{width: '100%'}} className = "aback" data-aos = 'fade-up'> 
                 <div className = "aback"> 
                     <div className = "container">
                         <div className = 'amenu-container'><Menu/></div> 

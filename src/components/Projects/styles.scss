@@ -16,6 +16,7 @@
 
     .picture  {
         position: relative;
+        //animation: anim 1s linear reverse 1 
     }
 
     .picture:hover img {
@@ -45,3 +46,14 @@
         text-align: center;
     }
 }
+/*
+@keyframes anim{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 250px;
+        opacity: 0;
+    }
+}
+*/

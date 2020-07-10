@@ -60,6 +60,9 @@
             flex-direction: row;
             justify-content: space-between;
             width: 585px;
+            p::after {
+                background-color: white;
+            }
         }
        
         .sbf-content-right {  
@@ -83,4 +86,3 @@
  
     }
 }
-
