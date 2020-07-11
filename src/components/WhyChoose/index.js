@@ -1,4 +1,5 @@
 import React from 'react';
+import AfterImage from "afterimage";
 
 import './styles.scss';
 import '../container.scss';
@@ -21,7 +22,12 @@ class WhyChoose extends React.Component {
                             </div>
                         )))}
                         <div className = "item-5" data-aos = 'fade-right' data-aos-once="true">
-                            <img src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`} alt = {this.props.data.getPage.sections[2].image_for_section.image.alternativeText}/>
+                            {/*<img src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`} alt = {this.props.data.getPage.sections[2].image_for_section.image.alternativeText}/>*/}
+                            <AfterImage 
+                                className = 'stuff'
+                                src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`}
+                                alt = {this.props.data.getPage.sections[2].image_for_section.image.alternativeText}
+                            />
                         </div>
                     </div>
                 </div>

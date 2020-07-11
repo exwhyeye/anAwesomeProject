@@ -18,8 +18,8 @@ const MenuLinks = () => (
     }
     >
         {({loading, error, data}) => {
-            if (loading) return <p>Loading ... </p>;
-            if (error) return <p>Error :(</p>;
+            if (loading) return <p></p>;
+            if (error) return <p></p>;
             return (data.pages.map(({index, menu_name, link}) => (
                 <Link key = {index} to={link}><p className = 'line'>{menu_name}</p></Link>
             )))

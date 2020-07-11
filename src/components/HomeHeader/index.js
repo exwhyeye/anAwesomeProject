@@ -10,6 +10,7 @@ class HomeHeader extends React.Component {
             <div style={{width: '100%'}} className = 'whole-header' data-aos = 'fade-up' data-aos-once="true">
                 <div className = "back">
                     <video 
+                        preload="metadata"
                         loop="loop" 
                         autoplay="autoplay"
                         muted="muted"

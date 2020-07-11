@@ -2,6 +2,7 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
+import AfterImage from "afterimage";
 
 import './styles.scss';
 import '../container.scss';
@@ -36,9 +37,15 @@ class Projects extends React.Component {
                         {                           
                             (data.projects.map(({index, image, header}) => (               
                                 <div key = {index} className = 'picture' data-aos = 'fade-left' data-aos-once="true">                                                          
-                                    <img src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/>                              
+                                    <AfterImage 
+                                        src = {`http://84.201.139.254:1337${image.url}`} 
+                                        alt = {image.alternativeText} 
+                                        className = 'stuff'
+                                    />                 
                                     <div className = 'center'>
-                                        <Link style = {{textDecoration: 'none'}} to={`/project/${header}`}><div className = 'readmore'>ПОДРОБНЕЕ</div></Link>
+                                        <Link style = {{textDecoration: 'none'}} to={`/project/${header}`}>
+                                            <div className = 'readmore'>ПОДРОБНЕЕ</div>
+                                        </Link>
                                     </div>    
                                 </div>              
                             )))

@@ -1,4 +1,5 @@
 import React from 'react';
+import AfterImage from "afterimage";
 
 import './styles.scss';
 import '../container.scss';
@@ -13,7 +14,12 @@ class Team extends React.Component {
                     <div className = "photos-container">
                         {(this.props.data.teams.map(({index, image, Name}) => (                      
                             <div key = {index} className = "photo">
-                                <img src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/>
+                                {/*<img src = {`http://84.201.139.254:1337${image.url}`} alt = {image.alternativeText}/>*/}
+                                <AfterImage
+                                    src = {`http://84.201.139.254:1337${image.url}`} 
+                                    alt = {image.alternativeText}
+                                    className = 'stuff'
+                                />
                                 <div class="middle">
                                     <div className = "name">{Name}</div>   
                                 </div>                     
