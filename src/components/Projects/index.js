@@ -41,6 +41,7 @@ class Projects extends React.Component {
                                         src = {`http://84.201.139.254:1337${image.url}`} 
                                         alt = {image.alternativeText} 
                                         className = 'stuff'
+                                        withPlaceholder = {false}
                                     />                 
                                     <div className = 'center'>
                                         <Link style = {{textDecoration: 'none'}} to={`/project/${header}`}>
