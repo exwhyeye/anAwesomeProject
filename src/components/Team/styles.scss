@@ -11,24 +11,17 @@
     grid-gap: 30px;
     grid-template-columns: 262px 262px 262px 262px;
     grid-template-rows: 336px 336px;
-
+    
     .stuff {
-        
-        // width: 100%;
-        // height: 100%;
-        // display: block;
-        
-        //object-fit: fill;
         opacity: 1; 
         transition: .5s ease;
-        // backface-visibility: hidden;
-        // object-fit: cover !important;
         display: inline;
         img {
+            height: 100% !important;
             object-fit: cover;
         }
     }  
-    
+
     // img {
     //     width: 100%;
     //     height: 100%;
@@ -45,7 +38,7 @@
         width: 100%;
     }
     
-    .photo:hover .stuff{
+    .photo:hover .stuff {
         opacity: 0.3;
       }
       

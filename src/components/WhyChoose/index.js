@@ -21,12 +21,12 @@ class WhyChoose extends React.Component {
                                 <p style = {{textTransform: 'uppercase', lineHeight: '25px', color: '#8f8f8f', fontSize: "medium"}}>{description}</p>
                             </div>
                         )))}
-                        <div className = "item-5" data-aos = 'fade-right' data-aos-once="true">
-                            {/*<img src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`} alt = {this.props.data.getPage.sections[2].image_for_section.image.alternativeText}/>*/}
+                        <div className = "item-5" data-aos = 'fade-right' data-aos-once="true">              
                             <AfterImage 
                                 className = 'stuff'
                                 src = {`http://84.201.139.254:1337${this.props.data.getPage.sections[2].image_for_section.image.url}`}
                                 alt = {this.props.data.getPage.sections[2].image_for_section.image.alternativeText}
+                                withPlaceholder = {false}
                             />
                         </div>
                     </div>
